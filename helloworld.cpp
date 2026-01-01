@@ -1,35 +1,17 @@
 #include <iostream>
+#include <vector>
+
+
+
 
 int main(){
-    int age = 20;
-    int year = 2026;
-    int days = 7;
 
-    double price = 10.99;
-    double gpa = 2.5;
-    double temperature = 25.1;
+    int correct = 8;
+    int questions = 10;
 
-    char grade = 'A';
-    char initial = 'U';
-    char currency = '$';
-
-    bool student = true;
-    bool power = true;
-    bool forsale = false;
-
-    std::string name = "Usman";
-    std::string day = "Thursday";
-    std::string food = "Butter Chicken";
-    std::string address = "123 Fake St.";
-    std::cout << name; 
-
-
-
-
+    double score = (correct / (double)  questions) * 100;
     
-
-
-
+    std::cout << score << "%"; 
 
     return 0;
 }
