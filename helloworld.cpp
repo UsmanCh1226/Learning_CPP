@@ -1,25 +1,27 @@
 #include <iostream>
-#include <vector>
+#include <cmath>
+
 
 
 
 
 int main(){
 
-    std::string name;
-    int age;
+    double x = 3.14;
+    double y = 4;
+    double z;
 
-
-
-
-    std::cout << "What's your full name? ";
-    std::getline(std::cin, name); 
-
-    std::cout << "What's your age? ";
-    std::cin >> age;
+    //z = std::max(x,y);
+    //z = std::min(x,y);
+    //z = pow(2,3);
+    //z = sqrt(3);
+    //z = abs(-3);
+    //z = round(x);
+    //z = ceil(x);
+    z = floor(x);
     
-    std::cout << "Hello " << name << '\n';
-    std::cout << "You are " << age << " years old.";
+
+    std::cout << z;
 
 
     return 0;
