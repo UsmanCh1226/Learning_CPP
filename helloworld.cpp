@@ -1,52 +1,19 @@
 #include <iostream>
 
-int main() {
+int main() 
+{
 
-    char op;
-    double num1;
-    double num2;
-    double result;
+    //int grade = 50;
 
-    std::cout << "********** CALCULATOR *************** << '\n'";
+    //grade >= 60 ? std::cout << "You pass!" : std::cout << "You fail.";
 
-    std::cout << "Enter either ( * + - /)";
-    std::cin >> op;
+    //int number = 9;
+    //number % 2   ? std::cout << "Odd" : std::cout << "Even"; 
 
-    std::cout << "Enter num1: ";
-    std::cin >> num1;
+    bool hungry = true;
+    //hungry ? std::cout << "You are hungry" : std::cout << "You are full"
+    std::cout << (hungry ? "You are hungry" : "You are full");
 
-    std::cout << "Enter num2: ";
-    std::cin >> num2;
-
-    switch(op) {
-        case '+':
-            result = num1 + num2;
-            std::cout << "Result: " << result << '\n';
-            break;
-        
-        case '-':
-            result = num1 - num2;
-            std::cout << "Result: " << result << '\n';
-            break;
-
-        case '*':
-            result = num1 * num2;
-            std::cout << "Result: " << result << '\n';
-            break;
-
-        case '/':
-            result = num1 / num2;
-            std::cout << "Result: " << result << '\n';
-            break;
-
-        default:
-        std::cout << "Invalid operator!";
-        break;
-            
-
-    std::cout << "Result: " << result << std::endl;
-    std::cout << "*************************************";
-    }  
     return 0;
 }
 
