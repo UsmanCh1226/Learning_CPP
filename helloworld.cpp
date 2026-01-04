@@ -2,34 +2,28 @@
 
 int main() 
 {
-    double temp;
-    char unit;
+    std::string name;
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+
+    //if(name.length() > 12){
+      //  std::cout << "Your name can't be over 12 characters.";
     
-    std::cout << "****** Temperature Conversion ******\n";
-    std::cout << "F = Fahrenheit\n";
-    std::cout << "C = Celsius\n";
-    std::cout << "What unit would you like to convert to? ";
-    std::cin >> unit;
+    //}
+    //else{
+      //  std::cout << "Welcome " << name << "!";
+    //}
+    //name.append("@gmail.com");
     
-    if(unit == 'F' || unit == 'f'){
-        std::cout << "Enter the temperature in Celsius: ";
-        std::cin >> temp;
+    //std::cout << "Your username is now " << name;
 
-        temp = (1.8 * temp) + 32;
-        std::cout << "The temperature in Fahrenheit is: " << temp << " F\n";
-    } 
-    else if(unit == 'C' || unit == 'c'){
-        std::cout << "Enter the temperature in Fahrenheit: ";
-        std::cin >> temp;
+    
+ 
+    //name.insert(0,"@");
+    name.erase(0, 5); 
 
-        temp = (temp - 32) / 1.8;
-        std::cout << "The temperature in Celsius is: " << temp << " C\n";
-    }
-    else {
-        std::cout << "Invalid unit selection. Please choose 'F' or 'C'.\n";
-    }
-
-    std::cout << "******************\n";
+    std::cout << name;
 
     return 0;
 }
