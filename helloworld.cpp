@@ -1,16 +1,17 @@
 #include <iostream>
 
 int main() 
-{
-    std::string name;
+ {
+    int number;
+    
+    do{
+        std::cout << "Enter a positive #: ";
+        std::cin >> number;
 
-    while(1==1) {
-        std::cout << "HELP! I'M STUCK IN A INFINITE LOOP ";
-        std::getline(std::cin, name);
-    }
+    }while(number < 0);
 
-    std::cout << "Hello " << name;
-
+    std::cout << "The # is: " << number; 
+ 
 
 
     return 0;
